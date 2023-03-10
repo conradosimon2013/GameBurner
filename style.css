@@ -1,0 +1,50 @@
+.background {
+	width: 450px;
+	height: 100vh;
+	background-image: url(https://i.pinimg.com/originals/4d/d0/2f/4dd02fd22dade38ad2d88f18e340b35d.gif);
+	background-size: 100% 100%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	overflow: hidden;
+word-wrap: break-word;
+
+  }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+  }
+  
+.fire {
+	width: 20px;
+	height: 20px;
+	background-image: url(https://i.gifer.com/origin/b3/b34dc1592ae8556da933835c0d532738.gif);
+	background-size: 100% 100%;
+	transform: rotate(180deg);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -20px;
+	margin: auto;
+
+
+}
+
+  .pj1 {
+  	position: absolute;
+  	width: 70px;
+	height: 70px;
+	background-image: url(https://i.pinimg.com/originals/52/17/7e/52177e3843b7878a30f059b14d065f7d.png);
+	background-position: center;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	bottom: 20px;
+
+	margin: auto;
+
+  }
