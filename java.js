@@ -2,13 +2,16 @@
 
   
 let positionypj1 = 20;
-let positionpj1 = 10;
+let positionpj1 = 0;
 let pj1left  = 0;
 let pj1right = 0;
 let pj1up = 0;
 let pj1down = 0;
 let fuego = 0;
-
+let positionenemy = -100
+let positionyenemy = 500
+positionybala = 0
+positionbala = 0
 setInterval(code, 8);
 
 setInterval(fire, 8);
@@ -30,6 +33,10 @@ function code(){
 
 	}
 
+		if((positionybala >= (positionyenemy - 70)) && (positionenemy+50 > positionbala) && (positionenemy-50 < positionbala)) {
+	console.log("fuego enemigo")
+
+}
 
 
 	if (pj1right==1){
@@ -94,9 +101,7 @@ function code(){
 
 
 
-
-
-
+	document.getElementById('enemigo').style.left = `${positionenemy}px`;
 
 };
 
@@ -104,11 +109,25 @@ function code(){
 	function fire() {
 		 if(!fuego==1) {setTimeout(function(){fuego=1}, 100);
 			document.getElementById('bala').style.left = `${positionpj1}px`;
-		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 20}px`;}, 170);
-		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 40}px`;}, 250);
-		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 80}px`;}, 320);
-		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 100}px`;}, 390);
-		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 120}px`;}, 440);
+			positionbala = `${positionpj1}`
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 100}px`;
+		  positionybala = (positionypj1 + 100)}, 137.7);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 150}px`;
+		  positionybala = (positionypj1 + 150)}, 175);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 200}px`;
+		  positionybala = (positionypj1 + 200)}, 213);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 250}px`;
+		  positionybala = (positionypj1 + 250)}, 250);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 300}px`;
+		  positionybala = (positionypj1 + 300)}, 288);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 350}px`;
+		  positionybala = (positionypj1 + 350)}, 326);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 400}px`;
+		  positionybala = (positionypj1 + 400)}, 363);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 450}px`;
+		  positionybala = (positionypj1 + 450)}, 401);
+		  setTimeout(function(){document.getElementById('bala').style.bottom = `${positionypj1 + 520}px`;
+		  positionybala = (positionypj1 + 520)}, 439);
 		  setTimeout(function(){fuego=0}, 500);}
 	}
 

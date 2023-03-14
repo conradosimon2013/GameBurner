@@ -64,3 +64,20 @@ z-index: 	-99;
 	z-index:-1;
 
   }
+
+  .enemigo {
+  	position: absolute;
+  	width: 70px;
+	height: 70px;
+	background-image: url(https://i.pinimg.com/originals/52/17/7e/52177e3843b7878a30f059b14d065f7d.png);
+	background-position: center;
+	background-size: cover;
+	left: 0;
+	right: 0;
+	bottom: 500px;
+
+	transform: rotate(180deg);
+	margin: auto;
+
+  
+  }
